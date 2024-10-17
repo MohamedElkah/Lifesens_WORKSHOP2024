@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 style="color: #7F3AE2; font-family:sans-serif;">LIFESENS</h1>
+            <div class="logo">
+                <img src="img/LifeSens.png" alt="Logo du site">
+            </div>
+        </header>
+
+        <section class="description">
+            <p style="font-size: 30px; font-weight: bold; font-family:sans-serif;">
+                Bienvenue sur LifeSens ! Votre Guide pour un Web plus Sain et Sécurisé
+            </p>
+            <p style="font-size: 30px; font-family:sans-serif;">
+                Votre Guide pour un Web plus Sain et Sécurisé
+            </p>
+        </section>
+        <section>
+            <header class="header1">
+
+                <h2 id="h2colorrrr">Les réseaux sociaux : un phénomène incontournable</h2>
+
+
+            </header>
+            <button style="margin-left: 47%; background: linear-gradient(to right, #591CE6 5%, #F9598D 45%, #FB8B61 85%);"><a href="https://reseaux-sociaux-jp92fd5.gamma.site" target="_blank">En savoir plus</a></button>
+        </section>
+        </section>
+        <section class="sensibilisation">
+            <div class="video-grid">
+                <iframe class="video-container" width="1600" height="800"
+                    src="https://www.youtube.com/embed/NLu7jQkos5U" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen aria-label="Vidéo de sensibilisation"></iframe>
+                <iframe class="video-container" width="1600" height="800"
+                    src="https://www.youtube.com/embed/2fFYtz5RTdg" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen aria-label="Vidéo de sensibilisation"></iframe>
+                <iframe class="video-container" width="1600" height="800"
+                    src="https://www.youtube.com/embed/3nnf04cYTIs" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen aria-label="Vidéo de sensibilisation"></iframe>
+            </div>
+            <button style="background: linear-gradient(to right, #591CE6 5%, #F9598D 45%, #FB8B61 85%); margin-left: 45%; height: 50%;"><a style="text-align: center ;color: #fff;" href="./quizz.html">Vérifiez vos connaissance</a></button>
+            <p  id="h2colorrrr" style="font-family:sans-serif;">
+                Chez LifeSens, nous vous accompagnons dans la découverte des meilleures pratiques pour sécuriser vos
+                activités en ligne et protéger vos données. Notre plateforme propose des conseils pratiques sur des
+                sujets comme l’assainissement des réseaux sociaux, la prévention des cybermenaces et la sécurité de vos
+                informations personnelles.
+            </p>
+            <p id="h2colorrrr" style="font-family:sans-serif;">
+                Contribuer à la sensibilisation est essentiel pour changer les mentalités et protéger les victimes
+                potentielles.
+            </p>
+            <ul>
+                <li  id="h2colorrrr" style="font-family:sans-serif;">Ressources et Outils pour naviguer en sécurité sur le web
+                    <a target="_blank" href="https://www.cnil.fr/fr">Lien vers une ressource de sensibilisation</a>
+                </li>
+                <li id="h2colorrrr" style="font-family:sans-serif;"><a id="h2colorrrr" target="_blank"
+                        href="https://www.economie.gouv.fr/particuliers/phishing-hameconnage-filoutage"
+                        aria-label="Ressource de sensibilisation">Lien vers une ressource de sensibilisation</a></li>
+                <li id="h2colorrrr" style="font-family:sans-serif;"><a id="h2colorrrr" target="_blank" href="https://www.signal-spam.fr/"
+                        aria-label="Organisation d'aide">Lien vers une organisation d'aide</a></li>
+            </ul>
+        </section>
+
+        <div class="stats-section" id="h2colorrrr" style="font-family:sans-serif;">
+            <h2>En chiffres</h2>
+            <div class="stats-container" style="font-family:sans-serif;">
+                <div class="stat-item">
+                    <img src="img/63%.png" alt="Formulaire">
+                    <p style="font-family:sans-serif;">Des jeunes de moins de 13ans sont titulaire d'un compte sur un
+                        réseau social.</p>
+                </div>
+                <div class="stat-item">
+                    <img src="img/4H.png" alt="Formulaire">
+                    <p>par jour passées sur les réseaux sociaux par les 16-25ans.</p>
+                </div>
+                <div class="stat-item">
+                    <img src="img/1-5.png" alt="Formulaire">
+                    <p style="font-family:sans-serif;">jeunes a déjà été victime de harcèlement sur les réseaux sociaux.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="module">
+            import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+            Chatbot.init({
+                chatflowid: "eaf61796-84b1-43fa-a556-c9238c1d9ecf",
+                apiHost: "http://localhost:3000",
+                chatflowConfig: {
+                    // topK: 2
+                },
+                theme: {
+                    button: {
+                        backgroundColor: "#3B81F6",
+                        right: 20,
+                        bottom: 20,
+                        size: "medium",
+                        iconColor: "white",
+                        customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                    },
+                    chatWindow: {
+                        welcomeMessage: "Bonjour bienvenue sur Safe O' Taff, que puis-je faire pour vous ?",
+                        backgroundColor: "#ffffff",
+                        height: 700,
+                        width: 400,
+                        fontSize: 16,
+                        poweredByTextColor: "#303235",
+                        botMessage: {
+                            backgroundColor: "#f7f8ff",
+                            textColor: "#303235",
+                            showAvatar: true,
+                            avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                        },
+                        userMessage: {
+                            backgroundColor: "#3B81F6",
+                            textColor: "#ffffff",
+                            showAvatar: true,
+                            avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                        },
+                        textInput: {
+                            placeholder: "Type your question",
+                            backgroundColor: "#ffffff",
+                            textColor: "#303235",
+                            sendButtonColor: "#3B81F6",
+                        }
+                    }
+                }
+            })
+        </script>
+
+
+        <footer>
+            <div>
+                <div class="logo-réseaux">
+                    <a href="https://www.example.com">
+                        <img src="img/Linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://www.example.com">
+                        <img src="img/Twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.example.com">
+                        <img src="img/Formulaire.png" alt="Formulaire">
+                    </a>
+                    <p>Vous avez des questions ou souhaitez en savoir plus sur nos actions pour un internet plus sûr ?
+                        Contactez-nous directement via notre formulaire ou posez vos questions a notre chatbot ou
+                        suivez-nous
+                        sur les réseaux sociaux.</p>
+                </div>
+            </div>
+            <p>© 2024 Votre entreprise. Tous droits réservés.</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+    </div>
+</body>
+
+</html>
